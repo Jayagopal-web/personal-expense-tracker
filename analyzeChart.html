@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Month Expense Tracker</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-color navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button> -->
+        <a class="navbar-brand white" href="./index.html">Expense Tracker</a>
+      </div>
+      <!-- <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="white">Chart</a></li>
+          <li><a href="#" class="white">Export</a></li>
+        </ul>
+      </div> -->
+    </div>
+  </nav>
+
+  <!-- tabs -->
+  <section class="tabs-section">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#weekly">Week</a></li>
+      <li><a data-toggle="tab" href="#monthly" id="monthContainer">Month</a></li>
+    </ul>
+  </section>
+
+  <!-- chart content -->
+  <div class="tab-content">
+    <div id="weekly" class="tab-pane fade in active">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 rm">
+            <h3>Weekly Report</h3>
+          </div>
+          <div class="col-xs-6">
+            <select class="form-control" id="week">
+              <!-- <option value="1">week 1</option>
+              <option value="2">week 2</option>
+              <option value="3">week 3</option>
+              <option value="4">week 4</option> -->
+            </select>
+          </div>
+        </div>
+        <div>
+          <div id="weekly_report"></div>
+          <div id="weekList"></div>
+        </div>
+      </div>
+    </div>
+    <div id="monthly" class="tab-pane fade">
+      <div class="container rm">
+        <h3>Monthly Report</h3>
+        <div id="monthly_report"></div>
+        <div id="monthList"></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>var exports = {};</script>
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- BS JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Script -->
+  <script src="./dist/reportChart.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --bg-color: #11ABC1;
+    --red: #DF3062;
+    --white: #FFF;
+    --yellow: #F5B935;
+    --green: #4BAC3F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/* remove bootstrap margin for h tags and p tags */
+.rm *{
+    margin: 0;
+}
+/* hide */
+.hide{
+    display: none;
+}
+.navbar-color{
+    background-color: var(--bg-color);
+    border-color: var(--bg-color) ;
+}
+
+.navbar-color .white, .navbar-color .navbar-nav>li>a{
+    color: var(--white);
+}
+.navbar-color .navbar-toggle>.icon-bar{
+    background-color: var(--white);
+}
+.navbar-color .navbar-toggle:hover{
+    background-color: #ffffff3f;
+}
+
+/* card Section */
+.card-section{
+    padding: 80px 0 20px 0;
+}
+
+.card-section .card-color{
+    padding: 20px 15px;
+    margin: 0;
+    background-color: var(--yellow);
+    color: var(--white);
+    box-shadow: 0 0 10px 0px #000;
+}
+#income-input-field .input{
+    display: inline;
+    width: auto;
+    height: auto;
+}
+.flex-card{
+    display: flex;
+    gap: 10px;
+}
+#display-income-container{
+    font-size: 18px;
+    font-weight: 500;
+}
+.income-card h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+.income-card input{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.income-card button{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.income-card .display-income-container{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-shadow: #000;
+}
+.mini-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    padding: 10px;
+}
+.expense{
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.current-balance{
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.expense h2, .current-balance h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+.expense p, .current-balance p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+/* Buttons */
+.btns-section{
+    padding: 15px 0;
+}
+.btns-grp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btns-grp .btn-text{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+/* Table */
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+.date-remarks .date{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #999;
+    line-height: normal;
+}
+.date-remarks .remarks{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+.amount{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* Inputs */
+.inputs{
+    padding: 10px 0;
+}
+.inputs-flex{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+/* AnalyzeChart.html */
+.tabs-section{
+    padding: 80px 0 20px 0;
+}
+#weekly_report, #monthly_report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#weekList ul li, #monthList ul li{
+    list-style-type: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+}
+#weekList ul li *, #monthList ul li *{
+    padding: 0 5px;
+}
+#monthList, #weekList{
+    display: flex;
+    justify-content: center;
+}

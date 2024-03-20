@@ -266,7 +266,7 @@ monthChartBtn.addEventListener('click', ()=>{
         console.log("MonthDate is empty");
         const month_report = document.getElementById('monthly_report') as HTMLDivElement;
         month_report.innerHTML="";
-        month_report.innerText = `There is No Expense for this week`;
+        month_report.innerText = `There is No Expense for this month`;
         month_report.style.fontSize = '16px';
         month_report.style.fontWeight = '500';
 
